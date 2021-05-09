@@ -1,0 +1,308 @@
+
+/* Google Fonts -----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header Section -----------------------------*/
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    float: left;
+    padding: 26px 0px;
+    background-color: rgba(0, 255, 255, 0.062);
+}
+.logo{
+    width: 30%;
+    float: left;
+}
+.logo img{
+    width: 150px;
+    display: block;
+}
+.manu{
+    width: 70%;
+    float: left;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 25px ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    background-color: rgba(55, 55, 245, 0.712);
+    padding: 5px 20px;
+}
+
+/* Banner Section---------------------------------------*/
+
+.banner{
+    width: 100%;
+    float: left;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    padding: 25px 0px;
+}
+.banner-main{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+}
+.banner-main h2{
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+}
+.banner-main  span{
+    border-bottom: 2px solid #1082c9 ;
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+}
+.banner-main p{
+    font-size: 15px;
+    color: white;
+}
+.banner-btn{
+    background: transparent;
+    border: 2px solid #1082c9;
+    padding: 10px 25px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+.banner-icon{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/* Discription Section-------------------------------- */
+
+.discription{
+    width: 100%;
+    float: left;
+    background-color: rgba(0, 255, 255, 0.062);
+}
+
+.discription-one{
+    text-align: center;
+    margin: 30px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.discription-one p{
+    color: rgba(0, 0, 0, 0.473);
+    margin-top: 15px;
+}
+/* Service Section----------------------------------- */
+
+.service{
+    width: 100%;
+    float: left;
+    padding: 50px 0px;
+}
+.service-one {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.service-icon{
+    background: #1082c9;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+}
+.service-icon::after{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(183, 183, 248, 0.705);
+    content: '';
+    right: 0;
+    top: 0;
+    opacity: 0.4;
+}
+.service-one h2{
+    margin: 10px 0;
+}
+.service-one p{
+    margin: 10px 0;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/* Portfolio Gallery Section  (1+2) ----------------------------------------*/
+
+
+.portfolio{
+    width: 100%;
+    float: left;
+    padding: 25px 0px;
+    background-color: #1082c90e;
+}
+
+.photo-contant{
+    text-align: center;
+    margin: 30px 0px;
+    color: rgb(53, 52, 52);
+}
+.photo-contant p{
+    font-size: 12px;
+    color: rgba(78, 77, 77, 0.616)
+}
+.image-hover{
+    width: 15.%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+.image-hover img{
+    width: 100%;
+}
+.image-hover-content{
+    background-color: rgba(0, 255, 255, 0.082);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+.image-hover-content h2{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    color:rgb(255, 255, 255)
+}
+.image-hover-content p{
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    color:rgb(255, 255, 255)
+}
+.image-hover:hover .image-hover-content{
+    opacity: 1;
+}
+
+/* From Submit Section --------------------------------------*/
+
+.contact{
+    width: 100%;
+    float: left;
+    padding: 50px 0px; 
+    background-image: url(../img/bkg.jpg);
+}
+.stay{
+    text-align: center;
+    margin: 25px 0px;
+    color: black;
+    margin-bottom: 50px;
+}
+.contact-form{
+    width: 40%;
+    margin: 0 auto;
+}
+.from-control{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 12px;
+    padding: 0px 5px;
+    border: 1px solid #ffff;
+    background: transparent;
+    border-radius: 15px;
+}
+.form-footer{
+
+}
+.cstm-textarea{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #ffff;
+    background: transparent;
+    color: #ffff;
+    border-radius: 15px;
+}
+.check{
+    margin-right: 11px;
+    float: left;
+    margin-top: 4px;
+    border-radius: 15px;
+}
+.label{
+    padding-top: 10px;
+}
+.submit-btn{
+    float: right;
+    background: transparent;
+    border: 1px solid #ffff;
+    padding: 5px 25px;
+    border-radius: 15px;
+}
+
+/* Footer Section---------------------------------------------------- */
+footer{
+    width: 100%;
+    float: left;
+    padding: 25px 0;
+    background-color: rgba(0, 255, 255, 0.144)
+}
+.copy{
+    width: 50%;
+    float: left;
+}
+.copy h2{
+    text-align: center;
+    font-size: 22px;
+    color: rgba(112, 128, 144, 0.459);
+    
+}
+.social-icon{
+    width: 50%;
+    float: left;
+}
+.social-icon ul{
+    list-style: none;
+}
+.social-icon li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.social-icon ul li a{
+    background: #017bc7;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
